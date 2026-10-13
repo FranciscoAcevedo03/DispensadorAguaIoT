@@ -17,9 +17,9 @@
         android:theme="@style/Theme.DispensadorAguaIoT"
         tools:targetApi="31">
 
-        <!-- Pantalla de inicio: Login -->
+        <!-- 1. Carga Inicial y Router (Splash) -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,9 +27,24 @@
             </intent-filter>
         </activity>
 
-        <!-- Pantalla principal: Dashboard -->
+        <!-- 2. Onboarding (3 pasos con persistencia) -->
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+
+        <!-- 3. Autenticación (Login, Registro, Recuperación) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- 4. Dashboard Principal -->
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- 5. Perfil y Ajustes -->
+        <activity
+            android:name=".ProfileActivity"
             android:exported="false" />
 
     </application>

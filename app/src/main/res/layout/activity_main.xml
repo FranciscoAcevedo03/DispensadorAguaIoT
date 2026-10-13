@@ -7,7 +7,7 @@
     android:padding="16dp"
     android:background="#F8F9FA">
 
-    <!-- Encabezado de conexion: Arranca en DESCONECTADO (Rojo) -->
+    <!-- Encabezado con Conexion y Perfil -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,10 +37,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vincular" />
+
+            <Button
+                android:id="@+id/btnPerfil"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perfil" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Monitor Termico: Arranca sin datos -->
+    <!-- Monitor Termico -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -80,7 +87,7 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Monitor de Balanza: Arranca en 0g -->
+    <!-- Monitor de Balanza -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -159,7 +166,7 @@
             android:text="250 g" />
     </com.google.android.material.chip.ChipGroup>
 
-    <!-- Botón Principal -->
+    <!-- Boton Principal -->
     <Button
         android:id="@+id/btnDispensar"
         android:layout_width="match_parent"

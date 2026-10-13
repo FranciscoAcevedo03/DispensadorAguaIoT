@@ -23,9 +23,8 @@
         android:text="Control y Dosificación Inteligente"
         android:textSize="14sp"
         android:textColor="#666666"
-        android:layout_marginBottom="32dp" />
+        android:layout_marginBottom="28dp" />
 
-    <!-- Campo Correo -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,11 +42,10 @@
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Campo Contraseña -->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         app:boxCornerRadiusTopStart="12dp"
         app:boxCornerRadiusTopEnd="12dp"
         app:boxCornerRadiusBottomStart="12dp"
@@ -62,7 +60,6 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Botón Iniciar Sesión -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
@@ -70,6 +67,24 @@
         android:text="INICIAR SESIÓN"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:cornerRadius="12dp" />
+        app:cornerRadius="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvRecuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#1976D2"
+        android:textSize="13sp"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Regístrate aquí"
+        android:textColor="#666666"
+        android:textSize="13sp" />
 
 </LinearLayout>
